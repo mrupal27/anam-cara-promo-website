@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(81, 93, 72);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.character-box {
+    background-color: #514535;
+    color: rgb(231, 213, 158);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+/*  Everything except Bio*/
+.character-header {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.character-header img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 2px solid rgb(220, 193, 94);
+    background-color: #ddd;
+}
+
+/* Character Name*/
+.character-details h2 {
+    color: rgb(255, 239, 192);
+    margin: 0 0 10px 0;
+}
+
+.character-bio {
+    margin-top: 1px;
+    line-height: 1.5;
+}
