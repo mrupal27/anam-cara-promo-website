@@ -1,55 +1,65 @@
 body {
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f5f5f5;
+  background-color: #514535;
   color: #222;
 }
 
 .all-content-centred {
-  max-width: 900px; /*using max width as all assets are fine to 
-  compress horizontally but ensures enough white space breathing room around content*/
-  
-  margin: 0 auto; /* top & bottom 0,
-  auto to distribute remaining horizontal screen space on left and right,
-  so even when shrunk under 900px, all content is still centred, helps responsiveness*/
-
-  padding: 40px; /*pads inner content away from edges*/
-  background-color: white;
-  min-height: 100vh; /*ensures centre div registers for whole viewport height*/
-  box-sizing: border-box; /*allows for easy borders / padding*/
+  max-width: 900px;
+  /*using max width as all assets are fine to    compress horizontally but ensures enough white space breathing room around content*/
+  margin: 0 auto;
+  /* top & bottom 0,   auto to distribute remaining horizontal screen space on left and right,   so even when shrunk under 900px, all content is still centred, helps responsiveness*/
+  padding: 40px;
+  /*pads inner content away from edges*/
+  background-color: #514535;
+  min-height: 100vh;
+  /*ensures centre div registers for whole viewport height*/
+  box-sizing: border-box;
+  /*allows for easy borders / padding*/
 }
 
 .title-section {
   display: flex;
   justify-content: center;
-  align-items: flex-end; /*lets h1 bottom align with image bottom*/
+  align-items: flex-end;
+  /*lets h1 bottom align with image bottom*/
   gap: 10px;
   margin-bottom: 40px;
 }
 
 .title-section h1 {
   margin: 0px;
-  font-size: 3rem; /*rem is more accessible as it adjusts relative to root element*/
+  font-size: 3.3rem;
+  color: rgb(231, 213, 158);
+  /*rem is more accessible as it adjusts relative to root element*/
 }
 
-.logo-placeholder {
-  height: 102px;
-  width: 70px;
-  object-fit: contain; /*allows any image size to scale in to dimensions*/
+.logo {
+  height: 131px;
+  width: 90px;
+  object-fit: contain;
+  /*allows any image size to scale in to dimensions*/
   background-color: #ddd;
-  border: 2px dashed #999;
+  border: 7px solid rgb(81, 93, 72);
 }
 
 .trailer-video {
-  width: 100%;
-  height: 400px;
   background-color: #ddd;
-  border: 2px dashed #999;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px; /*gap between video and next link */
+  margin-bottom: 30px;
+  /*gap between video and next link */
   font-size: 1.2rem;
+}
+
+.trailer-video video {
+  width: 100%;
+  /*video is 100% of centre content width & height, otherwise is too much*/
+  height: 100%;
+  object-fit: contain;
+  border: 6px solid rgb(231, 213, 158);
 }
 
 .demo-link-wrapper {
@@ -58,10 +68,15 @@ body {
 }
 
 .demo-link {
-  display: inline-block; /*helps link be inline so coloured background only covers text and padding works*/
-  font-size: 1.5rem;
+  display: inline-block;
+  /*helps link be inline so coloured background only covers text and padding works*/
+  font-size: 1.6rem;
   text-decoration: none;
-
+  color: rgb(231, 213, 158);
+  background-color: rgb(81, 93, 72);
+  border-radius: 10px;
+  border: 2px dashed rgb(231, 213, 158);
+  padding: 10px 20px;
 }
 
 .demo-link:hover {
@@ -70,8 +85,12 @@ body {
 
 .about {
   line-height: 2; /*more reaadable*/
+  font-size: 1.1rem;
+  font-weight: bolder;
+  color: rgb(231, 213, 158);
   text-align: center;
   margin-bottom: 50px;
+  border: 4px dashed rgb(81, 123, 72);
 }
 
 .links-section {
@@ -82,23 +101,30 @@ body {
 }
 
 .individual-link {
-  flex: .5; /*allows link boxes to consistently take up half width of window so only 1 shows on slimmer windows*/
-  min-width: 250px; /*ensures cards dont shrink too much on smaller screens*/
-  background-color: #fafafa;
-  border: 1px solid #ddd;
+  flex: .5;
+  /*allows link boxes to consistently take up half width of window so only 1 shows on slimmer windows*/
+  min-width: 250px;
+  /*ensures link boxes dont shrink too much on smaller screens*/
+  background-color: rgb(81, 93, 72);
+  border: 2px solid rgb(231, 213, 158);
+  border-radius: 10px;
   padding: 25px;
   text-align: center;
 }
 
 .individual-link h2 {
+  color: rgb(220, 193, 94);
+  font-weight:lighter;
   margin-top: 0px;
   margin-bottom: 20px;
 }
 
 .individual-link a {
-  text-decoration: none; /*lets underline show for only on hover*/
-  color: #0066cc;
+  text-decoration: none;
+  /*lets underline show for only on hover*/
+  color: rgb(231, 213, 158);
   font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .individual-link a:hover {
