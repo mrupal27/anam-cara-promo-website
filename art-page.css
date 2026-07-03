@@ -1,8 +1,54 @@
+.home-button {
+    position: fixed; /* Can see even when scrolling */
+    top: 20px;
+    left: 20px;
+
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(231, 213, 158);
+    z-index: 1000; /* Ensure the button is above other content */
+}
+
+.home-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #514535;
     color: rgb(231, 213, 158);
+}
+
+.title-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /*lets h1 bottom align with image bottom*/
+  gap: 10px;
+  margin-bottom: 80px;
+}
+
+.title-section h1 {
+  margin: 0px;
+  font-size: 3.3rem;
+  color: rgb(231, 213, 158);
+  /*rem is more accessible as it adjusts relative to root element*/
+}
+
+.logo {
+  height: 131px;
+  width: 90px;
+  object-fit: contain;
+  /*allows any image size to scale in to dimensions*/
+  background-color: #ddd;
+  border: 7px solid rgb(81, 93, 72);
 }
 
 .all-content-centred {
