@@ -1,131 +1,180 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Anam Cara - Art Gallery</title>
+  <title>Anam Cara - Art Gallery</title>
 
-    <link rel="stylesheet" href="art-page.css">
+  <link rel="stylesheet" href="site.css">
+
+  <!--Defer means the HTML loads before the gallery script runs-->
+  <script src="art-gallery.js" defer></script>
 </head>
 
-<body>
+<body class="art-page inner-page">
+
+  <!--Fixed home button remains visible whilst scrolling-->
+  <nav class="page-navigation" aria-label="Page navigation">
 
     <a href="home-page.html" class="home-button">
-        <img src="assets/home-icon.png" alt="Return to Home">
+
+      <img src="assets/home-icon.png" alt="">
+
+      <span class="visually-hidden">
+        Return to the home page
+      </span>
+
     </a>
 
-    <div class="all-content-centred">
+  </nav>
 
-        <div class="title-section">
+  <div class="page-shell">
 
-            <img class="logo" src="assets/AnamCaraLogo.png" alt="Anam Cara Logo">
+    <header class="site-header">
 
-            <h1>Anam <br />
-                Cara</h1>
+      <div class="brand">
+
+        <img
+          class="brand-logo"
+          src="assets/AnamCaraLogo.png"
+          alt="Anam Cara logo"
+        >
+
+        <p class="brand-title">Anam Cara</p>
+
+      </div>
+
+    </header>
+
+    <main>
+
+      <h1 class="page-heading">Art Gallery</h1>
+
+      <p class="page-description">
+        Explore the visual development of Anam Cara, from early character
+        sketches to promotional artwork. Select an image to view it larger.
+      </p>
+
+      <!--Character Concept Art-->
+      <section class="art-section" aria-labelledby="character-concept-heading">
+
+        <h2 id="character-concept-heading">Character Concept Art</h2>
+
+        <div class="gallery-row">
+
+          <img src="assets/cconcept1.png" alt="Character Concept Art 1">
+          <img src="assets/cconcept2.png" alt="Character Concept Art 2">
+          <img src="assets/cconcept3.png" alt="Character Concept Art 3">
+          <img src="assets/cconcept4.png" alt="Character Concept Art 4">
+          <img src="assets/cconcept5.png" alt="Character Concept Art 5">
 
         </div>
 
-        <h1>Art Gallery</h1>
+      </section>
 
-        <p class="page-description">
-            Explore the visual development of Anam Cara. <br />
-            From early character sketches to promotional artwork!
-        </p>
+      <!--Character Illustrations-->
+      <section class="art-section" aria-labelledby="illustrations-heading">
 
-        <!-- Character Concept Art -->
+        <h2 id="illustrations-heading">Character Illustrations</h2>
 
-        <section class="art-section">
+        <div class="gallery-row">
 
-            <h2>Character Concept Art:</h2>
+          <img src="assets/illustration1.png" alt="Character Illustration 1">
+          <img src="assets/illustration2.png" alt="Character Illustration 2">
+          <img src="assets/illustration3.png" alt="Character Illustration 3">
+          <img src="assets/illustration4.png" alt="Character Illustration 4">
+          <img src="assets/illustration5.png" alt="Character Illustration 5">
 
-            <div class="gallery-row">
+        </div>
 
-                <img src="assets/cconcept1.png" alt="Character Concept Art 1">
-                <img src="assets/cconcept2.png" alt="Character Concept Art 2">
-                <img src="assets/cconcept3.png" alt="Character Concept Art 3">
-                <img src="assets/cconcept4.png" alt="Character Concept Art 4">
-                <img src="assets/cconcept5.png" alt="Character Concept Art 5">
+      </section>
 
-            </div>
+      <!--Monster Concept Art-->
+      <section class="art-section" aria-labelledby="monster-concept-heading">
 
-        </section>
+        <h2 id="monster-concept-heading">Monster Concept Art</h2>
 
-        <!-- Character Illustrations -->
+        <div class="gallery-row">
 
-        <section class="art-section">
+          <img src="assets/mconcept1.png" alt="Monster Concept Art 1">
+          <img src="assets/mconcept2.png" alt="Monster Concept Art 2">
+          <img src="assets/mconcept3.png" alt="Monster Concept Art 3">
+          <img src="assets/mconcept4.png" alt="Monster Concept Art 4">
+          <img src="assets/mconcept5.png" alt="Monster Concept Art 5">
 
-            <h2>Character Illustrations:</h2>
+        </div>
 
-            <div class="gallery-row">
+      </section>
 
-                <img src="assets/illustration1.png" alt="Character Illustration 1">
-                <img src="assets/illustration2.png" alt="Character Illustration 2">
-                <img src="assets/illustration3.png" alt="Character Illustration 3">
-                <img src="assets/illustration4.png" alt="Character Illustration 4">
-                <img src="assets/illustration5.png" alt="Character Illustration 5">
+      <!--Game Posters-->
+      <section class="art-section" aria-labelledby="posters-heading">
 
-            </div>
+        <h2 id="posters-heading">Game Posters</h2>
 
-        </section>
+        <div class="gallery-row">
 
-        <!-- Monster Concept Art -->
+          <img src="assets/gp1.png" alt="Game Poster 1">
+          <img src="assets/gp2.png" alt="Game Poster 2">
+          <img src="assets/gp3.png" alt="Game Poster 3">
 
-        <section class="art-section">
+        </div>
 
-            <h2>Monster Concept Art:</h2>
+      </section>
 
-            <div class="gallery-row">
+      <!--Marketing Art-->
+      <section class="art-section" aria-labelledby="marketing-heading">
 
-                <img src="assets/mconcept1.png" alt="Monster Concept Art 1">
-                <img src="assets/mconcept2.png" alt="Monster Concept Art 2">
-                <img src="assets/mconcept3.png" alt="Monster Concept Art 3">
-                <img src="assets/mconcept4.png" alt="Monster Concept Art 4">
-                <img src="assets/mconcept5.png" alt="Monster Concept Art 5">
+        <h2 id="marketing-heading">Marketing Art</h2>
 
-            </div>
+        <div class="gallery-row">
 
-        </section>
+          <img src="assets/marketing1.png" alt="Marketing Art 1">
+          <img src="assets/marketing2.png" alt="Marketing Art 2">
+          <img src="assets/marketing3.png" alt="Marketing Art 3">
+          <img src="assets/marketing4.png" alt="Marketing Art 4">
+          <img src="assets/marketing5.png" alt="Marketing Art 5">
 
+        </div>
 
-        <!-- Game Posters -->
+      </section>
 
-        <section class="art-section">
+    </main>
 
-            <h2>Game Posters:</h2>
+  </div>
 
-            <div class="gallery-row">
+  <!--Hidden lightbox appears when an artwork is clicked-->
+  <div
+    class="lightbox"
+    id="lightbox"
+    aria-hidden="true"
+    hidden
+  >
 
-                <img src="assets/gp1.png" alt="Game Poster 1">
-                <img src="assets/gp2.png" alt="Game Poster 2">
-                <img src="assets/gp3.png" alt="Game Poster 3">
+    <div
+      class="lightbox-content"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="lightbox-caption"
+    >
 
-            </div>
+      <button
+        class="lightbox-close"
+        id="lightbox-close"
+        type="button"
+        aria-label="Close enlarged image"
+      >
+        &times;
+      </button>
 
-        </section>
+      <img id="lightbox-image" src="" alt="">
 
-        <!-- Marketing Art -->
-
-        <section class="art-section">
-
-            <h2>Marketing Art:</h2>
-
-            <div class="gallery-row">
-
-                <img src="assets/marketing1.png" alt="Marketing Art 1">
-                <img src="assets/marketing2.png" alt="Marketing Art 2">
-                <img src="assets/marketing3.png" alt="Marketing Art 3">
-                <img src="assets/marketing4.png" alt="Marketing Art 4">
-                <img src="assets/marketing5.png" alt="Marketing Art 5">
-
-            </div>
-
-        </section>
+      <p id="lightbox-caption"></p>
 
     </div>
 
+  </div>
 
 </body>
 

@@ -2,63 +2,135 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Anam Cara</title>
 
-  <link rel="stylesheet" href="home-page.css" />
+  <!--All pages now use one css file for more consistent styling-->
+  <link rel="stylesheet" href="site.css">
 </head>
 
-<body>
+<body class="home-page">
 
-  <div class="all-content-centred"> <!--Centering all content-->
+  <div class="page-shell"> <!--centres main content and gives consistent page spacing-->
 
-    <div class="title-section">
+    <header class="site-header">
 
-      <img class="logo" src="assets/AnamCaraLogo.png" alt="Anam Cara Logo">
+      <div class="brand">
 
-      <h1>Anam <br/>
-        Cara</h1>
+        <img
+          class="brand-logo"
+          src="assets/AnamCaraLogo.png"
+          alt="Anam Cara logo"
+        >
 
-    </div>
+        <!--Title stays on one line as requested in tutor feedback-->
+        <h1 class="brand-title">Anam Cara</h1>
 
-
-    <div class="trailer-video">
-      <video controls>
-        <source src="assets/ACtrailer.mp4" type="video/mp4">
-        Your browser does not support the video tag. <!--fallback text likely seen only on older browers-->
-      </video>
-    </div>
-
-    <div class="demo-link-wrapper"> <!--allows text to center without taking whole line-->
-      <a class="demo-link" href="https://cheezebeanz.itch.io/anam-cara">
-        Play Demo
-      </a>
-    </div>
-
-    <p class="about">
-      Anam Cara is a 2.5D historical fantasy co-op game where you play as two teenage siblings 
-      in a world shaped by witch trials, paranoia and dark experimentation. 
-      Players take control of the impulsive swordsman Wilfred and his magically gifted sister Winifred, 
-      whose spirit possesses creatures and objects from the form of a black cat. 
-      By combining two completely different playstyles, players must solve environmental puzzles, 
-      defeat monstrous creatures and uncover the truth behind their village and themselves.
-    </p>
-
-    <div class="links-section">
-
-      <div class="individual-link">
-        <h2>Characters:</h2>
-        <a href="characters-page.html">Click Here</a>
       </div>
 
-      <div class="individual-link">
-        <h2>Art Gallery:</h2>
-        <a href="art-page.html">Click Here</a>
+    </header>
+
+    <main>
+
+      <section class="trailer-section" aria-labelledby="trailer-heading">
+
+        <!--Hidden heading gives the video a useful label for screen readers-->
+        <h2 id="trailer-heading" class="visually-hidden">
+          Anam Cara Game Trailer
+        </h2>
+
+        <video controls>
+          <source src="assets/ACtrailer.mp4" type="video/mp4">
+
+          Your browser does not support the video tag.
+          <!--fallback text likely only seen on older browsers-->
+        </video>
+
+      </section>
+
+      <div class="demo-link-wrapper">
+
+        <a
+          class="demo-link"
+          href="https://cheezebeanz.itch.io/anam-cara"
+          target="_blank"
+          rel="noopener"
+        >
+          Play Demo
+        </a>
+
       </div>
 
-    </div>
+      <!--Story and features add more useful game information without needing another page-->
+      <div class="home-information">
+
+        <article class="information-panel">
+
+          <h2>Story</h2>
+
+          <p>
+            Anam Cara is a 2.5D historical fantasy co-op game following teenage
+            siblings Wilfred and Winifred through a world shaped by witch trials,
+            paranoia and dark experimentation. Together they must uncover the
+            truth behind their village and their own past.
+          </p>
+
+        </article>
+
+        <section class="information-panel" aria-labelledby="features-heading">
+
+          <h2 id="features-heading">Key Gameplay Features</h2>
+
+          <ul class="feature-list">
+
+            <li>Asymmetrical co-op with two clearly different player roles.</li>
+
+            <li>
+              Sword combat for Wilfred and magical possession for Winifred.
+            </li>
+
+            <li>
+              Environmental puzzles that require both players to work together.
+            </li>
+
+            <li>
+              A narrative-driven historical fantasy world with hand-drawn art.
+            </li>
+
+          </ul>
+
+        </section>
+
+      </div>
+
+      <!--Navigation to the two other main website pages-->
+      <nav class="links-section" aria-label="Website pages">
+
+        <section class="individual-link">
+
+          <h2>Characters</h2>
+
+          <a href="characters-page.html">
+            Meet the Characters
+          </a>
+
+        </section>
+
+        <section class="individual-link">
+
+          <h2>Art Gallery</h2>
+
+          <a href="art-page.html">
+            View the Artwork
+          </a>
+
+        </section>
+
+      </nav>
+
+    </main>
 
   </div>
 
